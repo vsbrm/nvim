@@ -15,3 +15,6 @@ vim.opt.nu = true
 
 -- set alternative for :
 vim.keymap.set('n', '<leader><leader>', ':', {desc = "run command"})
+
+-- highlight current line
+vim.opt.cursorline = true
