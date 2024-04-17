@@ -15,6 +15,8 @@ vim.opt.nu = true
 
 -- set alternative for :
 vim.keymap.set('n', '<leader><leader>', ':', {desc = "run command"})
+-- use Esc to exit terminal mode
+vim.keymap.set('t', '<esc>', [[<C-\><C-n>]])
 
 -- highlight current line
 vim.opt.cursorline = true
