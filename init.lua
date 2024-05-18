@@ -1,3 +1,3 @@
 require("editor-config")
-require("window-config")
 require("lazy-manager")
+require("window-config")
