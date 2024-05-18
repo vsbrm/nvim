@@ -7,7 +7,7 @@ return {
     vim.keymap.set('n', '<leader>ghr', gs.reset_hunk, {desc = "reset hunk"})
     vim.keymap.set('v', '<leader>ghs', function() gs.stage_hunk {vim.fn.line('.'), vim.fn.line('v')} end, {desc = "stage hunk"})
     vim.keymap.set('v', '<leader>ghr', function() gs.reset_hunk {vim.fn.line('.'), vim.fn.line('v')} end, {desc = "reset hunk"})
-    vim.keymap.set('n', '<leader>gbs', gs.stage_buffer, {desc = "stage bugger"})
+    vim.keymap.set('n', '<leader>gbs', gs.stage_buffer, {desc = "stage buffer"})
     vim.keymap.set('n', '<leader>gbr', gs.reset_buffer, {desc = "reset buffer"})
     vim.keymap.set('n', '<leader>ghp', gs.preview_hunk, {desc = "preview hunk"})
     vim.keymap.set('n', '<leader>gbl', function() gs.blame_line{full=true} end, {desc = "blocme line"})
