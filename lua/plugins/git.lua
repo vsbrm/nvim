@@ -10,7 +10,7 @@ return {
     vim.keymap.set('n', '<leader>gbs', gs.stage_buffer, {desc = "stage buffer"})
     vim.keymap.set('n', '<leader>gbr', gs.reset_buffer, {desc = "reset buffer"})
     vim.keymap.set('n', '<leader>ghp', gs.preview_hunk, {desc = "preview hunk"})
-    vim.keymap.set('n', '<leader>gbl', function() gs.blame_line{full=true} end, {desc = "blocme line"})
+    vim.keymap.set('n', '<leader>gbl', function() gs.blame_line{full=true} end, {desc = "blame line"})
     vim.keymap.set('n', '<leader>gtb', gs.toggle_current_line_blame, {desc = "toggle blame"})
     vim.keymap.set('n', '<leader>ghd', gs.diffthis, {desc = "diff hunk"})
     vim.keymap.set('n', '<leader>ghD', function() gs.diffthis('~') end, {desc = "diffhis"})
