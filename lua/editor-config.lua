@@ -10,7 +10,7 @@ vim.opt.tabstop = 2
 vim.opt.softtabstop = 2
 vim.opt.shiftwidth = 2
 
--- show line numers
+-- show line numbers
 vim.opt.nu = true
 vim.opt.relativenumber = true
 
@@ -31,3 +31,6 @@ vim.api.nvim_create_autocmd("TermOpen", {
     vim.opt_local.spell = false
   end,
 })
+
+vim.opt.list = true
+vim.opt.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
