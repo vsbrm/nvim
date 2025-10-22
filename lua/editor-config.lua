@@ -36,3 +36,9 @@ vim.opt.list = true
 vim.opt.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
 
 vim.opt.winborder = 'rounded'
+
+-- Add keybindings for a global buffer copy-paste
+vim.keymap.set('n', '<leader>y', '"+yy', {desc = "yank plus"})
+vim.keymap.set('v', '<leader>y', '"+y', {desc = "yank plus"})
+vim.keymap.set('n', '<leader>p', '"+p', {desc = "paste plus"})
+vim.keymap.set('v', '<leader>p', '"+p', {desc = "paste plus"})
