@@ -9,5 +9,6 @@ return {
      "--header-insertion-decorators",
      "--header-insertion=iwyu",
      "--pch-storage=memory"
-  }
+  },
+  root_markers = { { '.clangd' }, '.git' }
 }
