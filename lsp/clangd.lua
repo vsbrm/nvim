@@ -10,5 +10,6 @@ return {
      "--header-insertion=iwyu",
      "--pch-storage=memory"
   },
+  filetypes = { 'cpp' },
   root_markers = { { '.clangd' }, '.git' }
 }
